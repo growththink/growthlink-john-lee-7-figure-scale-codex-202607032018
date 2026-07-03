@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Innovera MTS — Professional Skin Rejuvenation at Home</title>
+<!--
+  INTERNAL REVIEW
+  Industry: Premium Beauty / Skincare Device (MTS Microneedling / Derma Device)
+  Palette: Soft rose-gold (#B76E79), deep charcoal (#2C2C2C), warm ivory (#FAF6F2), accent blush (#E8C4C8), white
+  Reference inspiration: foreo.com, drpen.com, currentbody.com, nuface.com — premium at-home beauty device DTC sites
+  Client: John Lee / Innovera MTS Device
+-->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--rose:#B76E79;--roseLt:#E8C4C8;--charcoal:#2C2C2C;--ivory:#FAF6F2;--white:#fff;--gold:#C9A96E;--text:#3A3A3A;--radius:12px}
+body{font-family:'Segoe UI',Helvetica,Arial,sans-serif;color:var(--text);background:var(--ivory);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{max-width:1140px;margin:0 auto;padding:0 20px}
+
+/* NAV */
+nav{background:var(--white);border-bottom:1px solid #eee;padding:14px 0;position:sticky;top:0;z-index:100}
+nav .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:1.35rem;font-weight:700;color:var(--charcoal);letter-spacing:.5px}
+.logo span{color:var(--rose)}
+nav a.cta-nav{background:var(--rose);color:#fff;padding:10px 22px;border-radius:30px;font-size:.9rem;font-weight:600;transition:.3s}
+nav a.cta-nav:hover{background:#a25e68}
+
+/* HERO + SURVEY */
+.hero{padding:50px 0 40px;background:linear-gradient(135deg,var(--ivory) 60%,var(--roseLt) 100%)}
+.hero .container{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.hero-copy h1{font-size:2.4rem;color:var(--charcoal);line-height:1.2;margin-bottom:16px}
+.hero-copy h1 em{font-style:normal;color:var(--rose)}
+.hero-copy p{font-size:1.05rem;color:#555;margin-bottom:20px;max-width:480px}
+.hero-copy .trust-row{display:flex;gap:20px;flex-wrap:wrap;margin-top:10px}
+.trust-badge{background:var(--white);border:1px solid #e0d6d0;border-radius:8px;padding:8px 14px;font-size:.78rem;color:var(--charcoal);font-weight:600}
+
+/* SURVEY FORM */
+#survey{background:var(--white);border-radius:var(--radius);padding:30px 28px;box-shadow:0 8px 30px rgba(0,0,0,.08)}
+#survey h2{font-size:1.25rem;color:var(--charcoal);margin-bottom:4px}
+#survey .sub{font-size:.85rem;color:#888;margin-bottom:18px}
+#survey label{display:block;font-size:.82rem;font-weight:600;color:var(--charcoal);margin-bottom:4px;margin-top:12px}
+#survey input,#survey select,#survey textarea{width:100%;padding:10px 12px;border:1px solid #d5cfc9;border-radius:8px;font-size:.9rem;background:var(--ivory);transition:.2s}
+#survey input:focus,#survey select:focus,#survey textarea:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 3px rgba(183,110,121,.15)}
+#survey textarea{resize:vertical;height:60px}
+#survey .btn-primary{display:block;width:100%;margin-top:18px;padding:14px;background:var(--rose);color:#fff;border:none;border-radius:30px;font-size:1rem;font-weight:700;cursor:pointer;transition:.3s}
+#survey .btn-primary:hover{background:#a25e68}
+#survey .note{font-size:.72rem;color:#aaa;text-align:center;margin-top:8px}
+
+/* SECTIONS */
+section{padding:60px 0}
+.section-title{text-align:center;font-size:1.8rem;color:var(--charcoal);margin-bottom:8px}
+.section-sub{text-align:center;color:#777;max-width:600px;margin:0 auto 36px;font-size:.95rem}
+
+/* BEFORE/AFTER */
+.ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ba-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.ba-visual{height:180px;display:flex}
+.ba-visual .ba-half{flex:1;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.ba-visual .before{background:linear-gradient(135deg,#ddd,#c5c0bb);color:#888}
+.ba-visual .after{background:linear-gradient(135deg,var(--roseLt),var(--rose));color:#fff}
+.ba-card .ba-info{padding:14px 16px;font-size:.85rem;color:#555;text-align:center}
+
+/* FEATURES */
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.feat-card{text-align:center;padding:28px 20px;background:var(--white);border-radius:var(--radius);box-shadow:0 4px 16px rgba(0,0,0,.05)}
+.feat-icon{width:56px;height:56px;margin:0 auto 14px;border-radius:50%;background:linear-gradient(135deg,var(--roseLt),var(--rose));display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:#fff}
+.feat-card h3{font-size:1rem;color:var(--charcoal);margin-bottom:6px}
+.feat-card p{font-size:.85rem;color:#777}
+
+/* KIT */
+.kit-section{background:var(--charcoal);color:#fff;padding:60px 0}
+.kit-section .container{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.kit-visual{background:linear-gradient(135deg,#444,#333);border-radius:var(--radius);height:320px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#999;border:1px solid #555}
+.kit-copy h2{font-size:1.8rem;margin-bottom:14px}
+.kit-copy ul{list-style:none;margin-bottom:20px}
+.kit-copy li{padding:6px 0;font-size:.95rem;color:#ccc}
+.kit-copy li::before{content:"✓ ";color:var(--rose);font-weight:700}
+.kit-copy .btn-kit{display:inline-block;padding:14px 32px;background:var(--rose);color:#fff;border-radius:30px;font-weight:700;transition:.3s}
+.kit-copy .btn-kit:hover{background:#d48a94}
+
+/* PROCESS */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.process-step{text-align:center;padding:24px 16px}
+.step-num{width:40px;height:40px;margin:0 auto 10px;border-radius:50%;background:var(--rose);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1rem}
+.process-step h4{font-size:.95rem;color:var(--charcoal);margin-bottom:4px}
+.process-step p{font-size:.8rem;color:#888}
+
+/* FAQ */
+.faq-list{max-width:700px;margin:0 auto}
+.faq-item{border-bottom:1px solid #e0d6d0;padding:16px 0}
+.faq-q{font-weight:700;color:var(--charcoal);font-size:.95rem;cursor:pointer}
+.faq-a{font-size:.88rem;color:#666;margin-top:6px}
+
+/* FINAL CTA */
+.final-cta{background:linear-gradient(135deg,var(--rose),#d48a94);padding:50px 0;text-align:center;color:#fff}
+.final-cta h2{font-size:1.8rem;margin-bottom:10px}
+.final-cta p{max-width:500px;margin:0 auto 20px;font-size:1rem;opacity:.9}
+.final-cta .btn-final{display:inline-block;padding:16px 40px;background:#fff;color:var(--rose);border-radius:30px;font-weight:700;font-size:1rem;transition:.3s}
+.final-cta .btn-final:hover{background:var(--ivory)}
+
+footer{background:var(--charcoal);color:#888;text-align:center;padding:24px 0;font-size:.75rem}
+
+@media(max-width:768px){
+.hero .container{grid-template-columns:1fr}
+.hero-copy{text-align:center}
+.hero-copy h1{font-size:1.7rem}
+.hero-copy .trust-row{justify-content:center}
+.ba-grid,.feat-grid,.process-grid{grid-template-columns:1fr}
+.kit-section .container{grid-template-columns:1fr}
+.kit-visual{height:200px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="container">
+<div class="logo">INNOVERA <span>MTS</span></div>
+<a href="#survey" class="cta-nav">Get Started →</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+<div class="hero-copy">
+<h1>Professional-Grade <em>Skin Rejuvenation</em> — Now in Your Hands</h1>
+<p>The Innovera MTS Device delivers clinical microneedling results at home. Visibly smoother, firmer, more radiant skin — without the clinic price tag.</p>
+<div class="trust-row">
+<span class="trust-badge">🔬 Clinically Tested</span>
+<span class="trust-badge">🏠 At-Home Use</span>
+<span class="trust-badge">🌿 Safe &amp; Gentle</span>
+</div>
+</div>
+
+<!-- SURVEY / LEAD QUALIFICATION — TOP OF PAGE -->
+<form id="survey" action="booking.html" method="get">
+<h2>See If Innovera MTS Is Right for You</h2>
+<p class="sub">Answer a few quick questions — takes under 60 seconds.</p>
+
+<label for="fname">Full Name</label>
+<input type="text" id="fname" name="fname" placeholder="Jane Smith" required>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="you@email.com" required>
+
+<label for="concern">Primary Skin Concern</label>
+<select id="concern" name="concern" required>
+<option value="" disabled selected>Select one…</option>
+<option>Fine Lines &amp; Wrinkles</option>
+<option>Acne Scars</option>
+<option>Uneven Skin Tone</option>
+<option>Large Pores</option>
+<option>Loss of Firmness</option>
+<option>General Anti-Aging</option>
+</select>
+
+<label for="routine">Current Skincare Routine</label>
+<select id="routine" name="routine">
+<option value="" disabled selected>Select one…</option>
+<option>Basic (Cleanser + Moisturizer)</option>
+<option>Intermediate (Serums, SPF, etc.)</option>
+<option>Advanced (Devices, Peels, etc.)</option>
+<option>Professional Treatments Only</option>
+</select>
+
+<label for="budget">Investment Comfort Level</label>
+<select id="budget" name="budget">
+<option value="" disabled selected>Select one…</option>
+<option>Under $200</option>
+<option>$200 – $400</option>
+<option>$400 – $600</option>
+<option>$600+</option>
+</select>
+
+<label for="goals">What result matters most to you?</label>
+<textarea id="goals" name="goals" placeholder="E.g., I want to reduce fine lines around my eyes…"></textarea>
+
+<button type="submit" class="btn-primary">See My Personalized Recommendation →</button>
+<p class="note">No spam. Your info is used only to personalize your experience.</p>
+</form>
+<!-- END SURVEY -->
+</div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section>
+<div class="container">
+<h2 class="section-title">Real Results, Real Skin</h2>
+<p class="section-sub">See the visible difference the Innovera MTS Device can make — results may vary by individual.</p>
+<div class="ba-grid">
+<div class="ba-card">
+<div class="ba-visual"><div class="ba-half before">Before</div><div class="ba-half after">After</div></div>
+<div class="ba-info">Fine lines visibly reduced after consistent use</div>
+</div>
+<div class="ba-card">
+<div class="ba-visual"><div class="ba-half before">Before</div><div class="ba-half after">After</div></div>
+<div class="ba-info">Smoother skin texture and improved radiance</div>
+</div>
+<div class="ba-card">
+<div class="ba-visual"><div class="ba-half before">Before</div><div class="ba-half after">After</div></div>
+<div class="ba-info">Firmer, more even-toned complexion</div>
+</div>
+</div>
+<!-- Placeholder: Replace with real before/after images when available -->
+</div>
+</section>
+
+<!-- FEATURES -->
+<section style="background:var(--white)">
+<div class="container">
+<h2 class="section-title">Why Innovera MTS</h2>
+<p class="section-sub">Engineered for professional results with at-home simplicity.</p>
+<div class="feat-grid">
+<div class="feat-card">
+<div class="feat-icon">⚡</div>
+<h3>Advanced MTS Technology</h3>
+<p>Precision micro-needling stimulates collagen production deep within the skin.</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">🏠</div>
+<h3>Clinic Results at Home</h3>
+<p>No appointments, no downtime. Use it on your schedule for consistent improvement.</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">🛡️</div>
+<h3>Safe &amp; Gentle</h3>
+<p>Designed for all skin types with adjustable intensity for your comfort level.</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">💧</div>
+<h3>Enhanced Absorption</h3>
+<p>Micro-channels help your serums penetrate deeper for amplified results.</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">✨</div>
+<h3>Visible in Weeks</h3>
+<p>Users report noticeable improvements in skin texture and tone within weeks of regular use.</p>
+</div>
+<div class="feat-card">
+<div class="feat-icon">🔋</div>
+<h3>Rechargeable &amp; Portable</h3>
+<p>Cordless design with long battery life — take your skincare routine anywhere.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ALL-IN-ONE KIT -->
+<section class="kit-section">
+<div class="container">
+<div class="kit-visual">[ Innovera MTS All-in-One Starter Kit — Product Image ]</div>
+<div class="kit-copy">
+<h2>The All-in-One Starter Kit</h2>
+<p style="color:#aaa;margin-bottom:16px">Everything you need to begin your skin transformation journey, packaged in one premium box.</p>
+<ul>
+<li>Innovera MTS Device</li>
+<li>Replacement Needle Cartridges</li>
+<li>Hydrating Prep Serum</li>
+<li>Post-Treatment Soothing Cream</li>
+<li>Quick-Start Guide &amp; Video Tutorials</li>
+<li>Premium Carrying Case</li>
+</ul>
+<a href="#survey" class="btn-kit">Qualify for Your Kit →</a>
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section>
+<div class="container">
+<h2 class="section-title">How It Works</h2>
+<p class="section-sub">Four simple steps to radiant, rejuvenated skin.</p>
+<div class="process-grid">
+<div class="process-step">
+<div class="step-num">1</div>
+<h4>Cleanse</h4>
+<p>Start with clean, dry skin for optimal results.</p>
+</div>
+<div class="process-step">
+<div class="step-num">2</div>
+<h4>Apply Serum</h4>
+<p>Use the included prep serum to prime your skin.</p>
+</div>
+<div class="process-step">
+<div class="step-num">3</div>
+<h4>Treat</h4>
+<p>Glide the MTS device gently across target areas.</p>
+</div>
+<div class="process-step">
+<div class="step-num">4</div>
+<h4>Soothe</h4>
+<p>Finish with the soothing cream and let your skin recover.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section style="background:var(--white)">
+<div class="container">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<p class="section-sub">Everything you need to know before getting started.</p>
+<div class="faq-list">
+<div class="faq-item">
+<div class="faq-q">Is the Innovera MTS Device safe for at-home use?</div>
+<div class="faq-a">Yes. The device is designed with safety features including adjustable needle depth and auto-stop technology, suitable for all skin types.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">How soon will I see results?</div>
+<div class="faq-a">Many users notice improvements in skin texture and radiance within 2–4 weeks of consistent use. Individual results may vary.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Does it hurt?</div>
+<div class="faq-a">Most users describe the sensation as a mild tingling. The adjustable intensity lets you find your comfort level.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Can I use my own serums with the device?</div>
+<div class="faq-a">Absolutely. The MTS device enhances absorption of water-based serums. We recommend avoiding retinol or acids immediately after treatment.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">What's included in the Starter Kit?</div>
+<div class="faq-a">The kit includes the MTS device, replacement cartridges, hydrating prep serum, soothing cream, quick-start guide, and a premium carrying case.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+<div class="container">
+<h2>Ready to Transform Your Skin?</h2>
+<p>Take the 60-second quiz to see if the Innovera MTS Device is right for your skin goals.</p>
+<a href="#survey" class="btn-final">Take the Quiz →</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>&copy; 2025 Innovera. All rights reserved. | Results may vary. This device is not intended to diagnose, treat, cure, or prevent any disease.</p>
+<!-- Demo generated for internal Growthlink review -->
+</div>
+</footer>
+
+</body>
+</html>
